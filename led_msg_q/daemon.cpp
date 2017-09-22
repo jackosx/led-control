@@ -11,6 +11,7 @@
 #include <sys/msg.h>
 #include <sys/ipc.h>
 #include <sys/types.h>
+#include <getopt.h>
 
 #include "led_msg.h"
 #include "led_msg_q.h"
@@ -102,17 +103,14 @@ route_msg(led_msg msg) {
     }
 }
 
-
-int
-main(int argc, const char * argv[]) {
-    
-
+void
+start() {
     try {
         led_config::init_controllers();
     } catch (...) {
         connectFailed("");
     }
-    
+
     led_msg_q q;
     try {
         q.init();
@@ -124,12 +122,35 @@ main(int argc, const char * argv[]) {
     }
 
     printf("Daemon running\n");
-    
+
     led_msg msg;
     while (q.receive(msg)) {
         route_msg(msg);
     }
     perror("msgrcv error");
+}
+
+int
+main(int argc, char * const argv[]) {
     
-    return 1;
+    // Parse options if there are any
+    char flag;
+    while ((flag = getopt(argc, argv, "sl")) != -1 ) {
+        switch (flag) {
+            case 's':
+                start();
+                break;
+            case 'l':
+                printDeviceList();
+            default:
+                fprintf(stderr, "Unknown option");
+                continue;
+        }
+    }
+    
+    // If no flags, then start normally
+    if (argc == 1)
+        start();
+    
+    return 0;
 }
