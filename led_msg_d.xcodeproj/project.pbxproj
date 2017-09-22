@@ -1,0 +1,475 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DE13FE0B1F75992800698FDF /* led_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE13FE091F75992800698FDF /* led_config.cpp */; };
+		DE13FE0C1F75992800698FDF /* led_config.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE13FE091F75992800698FDF /* led_config.cpp */; };
+		DE196CBD1F57945D00F4AA55 /* daemon.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE196CBC1F57945D00F4AA55 /* daemon.cpp */; };
+		DE196CCA1F57948D00F4AA55 /* client.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE196CC91F57948D00F4AA55 /* client.cpp */; };
+		DE2F9DAC1F618DA500AA7FF1 /* Controller.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE2F9DAA1F618DA500AA7FF1 /* Controller.cpp */; };
+		DE97DA7A1F5CF2ED00403AC3 /* led_msg_q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE97DA781F5CF2ED00403AC3 /* led_msg_q.cpp */; };
+		DE97DA7B1F5CF2ED00403AC3 /* led_msg_q.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DE97DA781F5CF2ED00403AC3 /* led_msg_q.cpp */; };
+		DE97DABC1F5EE7D700403AC3 /* serial.cc in Sources */ = {isa = PBXBuildFile; fileRef = DE97DABB1F5EE79000403AC3 /* serial.cc */; };
+		DE97DABD1F5EE7DF00403AC3 /* unix.cc in Sources */ = {isa = PBXBuildFile; fileRef = DE97DAB91F5EE79000403AC3 /* unix.cc */; };
+		DE97DABE1F5EE7E400403AC3 /* list_ports_osx.cc in Sources */ = {isa = PBXBuildFile; fileRef = DE97DAB71F5EE79000403AC3 /* list_ports_osx.cc */; };
+		DE97DAC11F5EE83600403AC3 /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE97DAC01F5EE83600403AC3 /* IOKit.framework */; };
+		DE97DAC31F5EE85500403AC3 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE97DAC21F5EE85500403AC3 /* CoreFoundation.framework */; };
+		DED22C8F1F590EE800205687 /* led_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = DED22C8D1F590EE800205687 /* led_msg.c */; };
+		DED22C901F590EE800205687 /* led_msg.c in Sources */ = {isa = PBXBuildFile; fileRef = DED22C8D1F590EE800205687 /* led_msg.c */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DE196CB71F57945D00F4AA55 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		DE196CC51F57948D00F4AA55 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		DE13FE091F75992800698FDF /* led_config.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = led_config.cpp; sourceTree = "<group>"; };
+		DE13FE0A1F75992800698FDF /* led_config.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = led_config.hpp; sourceTree = "<group>"; };
+		DE196CB91F57945D00F4AA55 /* led_msg_d */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = led_msg_d; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE196CBC1F57945D00F4AA55 /* daemon.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = daemon.cpp; sourceTree = "<group>"; };
+		DE196CC71F57948D00F4AA55 /* led_client */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = led_client; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE196CC91F57948D00F4AA55 /* client.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = client.cpp; sourceTree = "<group>"; };
+		DE2F9DAA1F618DA500AA7FF1 /* Controller.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Controller.cpp; sourceTree = "<group>"; };
+		DE2F9DAB1F618DA500AA7FF1 /* Controller.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Controller.hpp; sourceTree = "<group>"; };
+		DE97DA781F5CF2ED00403AC3 /* led_msg_q.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = led_msg_q.cpp; sourceTree = "<group>"; };
+		DE97DA791F5CF2ED00403AC3 /* led_msg_q.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_msg_q.h; sourceTree = "<group>"; };
+		DE97DAAF1F5EE79000403AC3 /* unix.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = unix.h; sourceTree = "<group>"; };
+		DE97DAB01F5EE79000403AC3 /* win.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = win.h; sourceTree = "<group>"; };
+		DE97DAB11F5EE79000403AC3 /* serial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = serial.h; sourceTree = "<group>"; };
+		DE97DAB21F5EE79000403AC3 /* v8stdint.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = v8stdint.h; sourceTree = "<group>"; };
+		DE97DAB61F5EE79000403AC3 /* list_ports_linux.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = list_ports_linux.cc; sourceTree = "<group>"; };
+		DE97DAB71F5EE79000403AC3 /* list_ports_osx.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = list_ports_osx.cc; sourceTree = "<group>"; };
+		DE97DAB81F5EE79000403AC3 /* list_ports_win.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = list_ports_win.cc; sourceTree = "<group>"; };
+		DE97DAB91F5EE79000403AC3 /* unix.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = unix.cc; sourceTree = "<group>"; };
+		DE97DABA1F5EE79000403AC3 /* win.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = win.cc; sourceTree = "<group>"; };
+		DE97DABB1F5EE79000403AC3 /* serial.cc */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = serial.cc; sourceTree = "<group>"; };
+		DE97DAC01F5EE83600403AC3 /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		DE97DAC21F5EE85500403AC3 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		DED22C8D1F590EE800205687 /* led_msg.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = led_msg.c; sourceTree = "<group>"; };
+		DED22C8E1F590EE800205687 /* led_msg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = led_msg.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE196CB61F57945D00F4AA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE97DAC31F5EE85500403AC3 /* CoreFoundation.framework in Frameworks */,
+				DE97DAC11F5EE83600403AC3 /* IOKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE196CC41F57948D00F4AA55 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DE196CB01F57945D00F4AA55 = {
+			isa = PBXGroup;
+			children = (
+				DE97DAAB1F5EE79000403AC3 /* serial */,
+				DE196CCF1F58E26200F4AA55 /* Shared */,
+				DE196CBB1F57945D00F4AA55 /* led_msg_d */,
+				DE196CC81F57948D00F4AA55 /* led_client */,
+				DE196CBA1F57945D00F4AA55 /* Products */,
+				DE97DABF1F5EE83500403AC3 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE196CBA1F57945D00F4AA55 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE196CB91F57945D00F4AA55 /* led_msg_d */,
+				DE196CC71F57948D00F4AA55 /* led_client */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE196CBB1F57945D00F4AA55 /* led_msg_d */ = {
+			isa = PBXGroup;
+			children = (
+				DE196CBC1F57945D00F4AA55 /* daemon.cpp */,
+				DE2F9DAA1F618DA500AA7FF1 /* Controller.cpp */,
+				DE2F9DAB1F618DA500AA7FF1 /* Controller.hpp */,
+			);
+			name = led_msg_d;
+			path = led_msg_q;
+			sourceTree = "<group>";
+		};
+		DE196CC81F57948D00F4AA55 /* led_client */ = {
+			isa = PBXGroup;
+			children = (
+				DE196CC91F57948D00F4AA55 /* client.cpp */,
+			);
+			path = led_client;
+			sourceTree = "<group>";
+		};
+		DE196CCF1F58E26200F4AA55 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DED22C8D1F590EE800205687 /* led_msg.c */,
+				DED22C8E1F590EE800205687 /* led_msg.h */,
+				DE97DA781F5CF2ED00403AC3 /* led_msg_q.cpp */,
+				DE97DA791F5CF2ED00403AC3 /* led_msg_q.h */,
+				DE13FE091F75992800698FDF /* led_config.cpp */,
+				DE13FE0A1F75992800698FDF /* led_config.hpp */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		DE97DAAB1F5EE79000403AC3 /* serial */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAAC1F5EE79000403AC3 /* include */,
+				DE97DAB31F5EE79000403AC3 /* src */,
+			);
+			path = serial;
+			sourceTree = "<group>";
+		};
+		DE97DAAC1F5EE79000403AC3 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAAD1F5EE79000403AC3 /* serial */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		DE97DAAD1F5EE79000403AC3 /* serial */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAAE1F5EE79000403AC3 /* impl */,
+				DE97DAB11F5EE79000403AC3 /* serial.h */,
+				DE97DAB21F5EE79000403AC3 /* v8stdint.h */,
+			);
+			path = serial;
+			sourceTree = "<group>";
+		};
+		DE97DAAE1F5EE79000403AC3 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAAF1F5EE79000403AC3 /* unix.h */,
+				DE97DAB01F5EE79000403AC3 /* win.h */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		DE97DAB31F5EE79000403AC3 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAB41F5EE79000403AC3 /* impl */,
+				DE97DABB1F5EE79000403AC3 /* serial.cc */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DE97DAB41F5EE79000403AC3 /* impl */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAB51F5EE79000403AC3 /* list_ports */,
+				DE97DAB91F5EE79000403AC3 /* unix.cc */,
+				DE97DABA1F5EE79000403AC3 /* win.cc */,
+			);
+			path = impl;
+			sourceTree = "<group>";
+		};
+		DE97DAB51F5EE79000403AC3 /* list_ports */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAB61F5EE79000403AC3 /* list_ports_linux.cc */,
+				DE97DAB71F5EE79000403AC3 /* list_ports_osx.cc */,
+				DE97DAB81F5EE79000403AC3 /* list_ports_win.cc */,
+			);
+			path = list_ports;
+			sourceTree = "<group>";
+		};
+		DE97DABF1F5EE83500403AC3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE97DAC21F5EE85500403AC3 /* CoreFoundation.framework */,
+				DE97DAC01F5EE83600403AC3 /* IOKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE196CB81F57945D00F4AA55 /* led_msg_d */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE196CC01F57945D00F4AA55 /* Build configuration list for PBXNativeTarget "led_msg_d" */;
+			buildPhases = (
+				DE196CB51F57945D00F4AA55 /* Sources */,
+				DE196CB61F57945D00F4AA55 /* Frameworks */,
+				DE196CB71F57945D00F4AA55 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = led_msg_d;
+			productName = led_msg_q;
+			productReference = DE196CB91F57945D00F4AA55 /* led_msg_d */;
+			productType = "com.apple.product-type.tool";
+		};
+		DE196CC61F57948D00F4AA55 /* led_client */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE196CCB1F57948D00F4AA55 /* Build configuration list for PBXNativeTarget "led_client" */;
+			buildPhases = (
+				DE196CC31F57948D00F4AA55 /* Sources */,
+				DE196CC41F57948D00F4AA55 /* Frameworks */,
+				DE196CC51F57948D00F4AA55 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = led_client;
+			productName = led_client;
+			productReference = DE196CC71F57948D00F4AA55 /* led_client */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE196CB11F57945D00F4AA55 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Jack O'Shea";
+				TargetAttributes = {
+					DE196CB81F57945D00F4AA55 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					DE196CC61F57948D00F4AA55 = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DE196CB41F57945D00F4AA55 /* Build configuration list for PBXProject "led_msg_d" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = DE196CB01F57945D00F4AA55;
+			productRefGroup = DE196CBA1F57945D00F4AA55 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE196CB81F57945D00F4AA55 /* led_msg_d */,
+				DE196CC61F57948D00F4AA55 /* led_client */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE196CB51F57945D00F4AA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE97DABE1F5EE7E400403AC3 /* list_ports_osx.cc in Sources */,
+				DE13FE0B1F75992800698FDF /* led_config.cpp in Sources */,
+				DE97DABD1F5EE7DF00403AC3 /* unix.cc in Sources */,
+				DE97DA7A1F5CF2ED00403AC3 /* led_msg_q.cpp in Sources */,
+				DED22C8F1F590EE800205687 /* led_msg.c in Sources */,
+				DE196CBD1F57945D00F4AA55 /* daemon.cpp in Sources */,
+				DE2F9DAC1F618DA500AA7FF1 /* Controller.cpp in Sources */,
+				DE97DABC1F5EE7D700403AC3 /* serial.cc in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE196CC31F57948D00F4AA55 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE97DA7B1F5CF2ED00403AC3 /* led_msg_q.cpp in Sources */,
+				DE13FE0C1F75992800698FDF /* led_config.cpp in Sources */,
+				DE196CCA1F57948D00F4AA55 /* client.cpp in Sources */,
+				DED22C901F590EE800205687 /* led_msg.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DE196CBE1F57945D00F4AA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		DE196CBF1F57945D00F4AA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.12;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		DE196CC11F57945D00F4AA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE196CC21F57945D00F4AA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		DE196CCC1F57948D00F4AA55 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		DE196CCD1F57948D00F4AA55 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE196CB41F57945D00F4AA55 /* Build configuration list for PBXProject "led_msg_d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE196CBE1F57945D00F4AA55 /* Debug */,
+				DE196CBF1F57945D00F4AA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE196CC01F57945D00F4AA55 /* Build configuration list for PBXNativeTarget "led_msg_d" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE196CC11F57945D00F4AA55 /* Debug */,
+				DE196CC21F57945D00F4AA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE196CCB1F57948D00F4AA55 /* Build configuration list for PBXNativeTarget "led_client" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE196CCC1F57948D00F4AA55 /* Debug */,
+				DE196CCD1F57948D00F4AA55 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE196CB11F57945D00F4AA55 /* Project object */;
+}
