@@ -6,7 +6,7 @@
 //  Copyright © 2017 Jack O'Shea. All rights reserved.
 //
 
-#include "Controller.hpp"
+#include "controller.hpp"
 
 size_t Controller::totalStrips = 0;
 std::vector<std::shared_ptr<Controller>> Controller::stripMap;
